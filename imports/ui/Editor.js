@@ -31,7 +31,7 @@ export class Editor extends React.Component {
 
     handleRemoval() {
         this.props.call('notes.remove', this.props.note._id);
-        this.props.browswerHistory.push('/dashboard');
+        this.props.browserHistory.push('/dashboard');
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -58,7 +58,7 @@ export class Editor extends React.Component {
         } else {
             return (
                 <p>
-                    { this.props.selectedNoteId ? 'Note not found.' : 'Pick or create a note to get started' }
+                    { this.props.selectedNoteId ? 'Note not found.' : 'Pick or create a note to get started.' }
                 </p>
             );
         }
