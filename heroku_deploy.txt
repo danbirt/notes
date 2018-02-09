@@ -1,0 +1,6 @@
+1. heroku create notes-danbirt
+2. heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
+3. heroku addons:create mongolab:sandbox
+4. heroku config:set ROOT_URL="https://notes-danbier.herokuapp.com"
+5. meteor node -v
+6. git push heroku master
